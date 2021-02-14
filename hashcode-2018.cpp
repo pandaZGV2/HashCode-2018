@@ -14,7 +14,7 @@ typedef pair<int, int> pi;
 #define mp make_pair
 
 #define file_read                                         \
-    freopen("input/b_should_be_easy.in", "r", stdin); \
+    freopen("input/c_no_hurry.in", "r", stdin); \
     freopen("output.txt", "w", stdout);
 #define endl "\n"
 #define iamspeed                 \
@@ -111,7 +111,8 @@ int main(void)
             cout << endl;
         }
     }
-    fprintf(stdout, "%d", score);
+    cout<<score<<endl;
+
 
     return 0;
 }
