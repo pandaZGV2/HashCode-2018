@@ -83,7 +83,7 @@ int main(void)
         a.erase(a.begin());
         for (int j = 0; j < a.size(); j++)
         {
-            if (fleet[i].time <= a[j].earliest)
+            if (fleet[i].time <= a[j].earliest or a[j].latest-fleet[i].time)
             {
                 if (fleet[i].time == a[j].earliest)
                 {
