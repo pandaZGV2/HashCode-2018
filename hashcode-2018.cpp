@@ -13,7 +13,7 @@ typedef pair<int, int> pi;
 #define pb push_back
 #define mp make_pair
 
-#define file_read                                         \
+#define file_read                               \
     freopen("input/c_no_hurry.in", "r", stdin); \
     freopen("output.txt", "w", stdout);
 #define endl "\n"
@@ -21,9 +21,8 @@ typedef pair<int, int> pi;
     ios::sync_with_stdio(false); \
     cin.tie(0);                  \
     cout.tie(0);
-class ride
+struct ride
 {
-public:
     pi start;
     pi finish;
     int earliest;
@@ -37,9 +36,8 @@ public:
         id = 0;
     }
 };
-class car
+struct car
 {
-public:
     vector<pair<pi, pi>> sflist;
     int bonus;
     vector<int> ridelist;
@@ -83,7 +81,7 @@ int main(void)
         a.erase(a.begin());
         for (int j = 0; j < a.size(); j++)
         {
-            if (fleet[i].time <= a[j].earliest or a[j].latest-fleet[i].time)
+            if (fleet[i].time <= a[j].earliest or a[j].latest - fleet[i].time)
             {
                 if (fleet[i].time == a[j].earliest)
                 {
@@ -111,8 +109,7 @@ int main(void)
             cout << endl;
         }
     }
-    cout<<score<<endl;
-
+    cout << score << endl;
 
     return 0;
 }
