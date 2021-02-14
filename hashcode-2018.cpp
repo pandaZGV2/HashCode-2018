@@ -13,10 +13,8 @@ typedef pair<int, int> pi;
 #define pb push_back
 #define mp make_pair
 
-#define loop(n) for (int i = 0; i < n; i++)
-#define rep(i, a, n) for (int i = a; i < n; i++)
 #define file_read                                         \
-    freopen("input/a_example.in", "r", stdin); \
+    freopen("input/b_should_be_easy.in", "r", stdin); \
     freopen("output.txt", "w", stdout);
 #define endl "\n"
 #define iamspeed                 \
@@ -113,7 +111,7 @@ int main(void)
             cout << endl;
         }
     }
-    fprintf(stdin, "%d", score);
+    fprintf(stdout, "%d", score);
 
     return 0;
 }
